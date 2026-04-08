@@ -83,15 +83,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	// It draws a filled red rectangle on the canvas
 	function drawRectangle() {
 		ctx.fillStyle = "red";          // set the fill color to red
-		ctx.fillRect(50, 50, 200, 150); // draw rectangle at x=50, y=50 with width=200, height=150
+		ctx.fillRect(50, 50, 300, 200); // draw rectangle at x=50, y=50 with width=300, height=200
 	}
  
 	// drawName() is called when the Draw Name button is pressed
 	// It writes a name as text onto the canvas
 	function drawName() {
-		ctx.font = "15px Arial";             // set the font size and style
+		ctx.font = "10px Arial";             // set the font size and style
 		ctx.fillStyle = "black";             // set the text color to black
-		ctx.fillText("Riddhish Bommineni", 60, 160); // draw the text at x=60, y=160
+		ctx.fillText("Riddhish Bommineni", 40, 120); // draw the text at x=60, y=160
 	}
  
 	// loadImage() is called when the Load Image button is pressed
@@ -106,7 +106,6 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	function clearCanvas() {
 		ctx.clearRect(0, 0, 300, 300); // clear the entire 300x300 canvas area
 	}
-
 
 </script>
  
