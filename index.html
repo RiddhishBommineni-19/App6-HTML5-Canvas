@@ -92,6 +92,51 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 
 
+// Get the canvas element by its id
+	var c = document.getElementById("myCanvas");
+ 
+	// Get the 2D drawing context so we can draw on the canvas
+	var ctx = c.getContext("2d");
+ 
+	// drawRectangle() is called when the Draw Rectangle button is pressed
+	// It draws a filled red rectangle on the canvas
+	function drawRectangle() {
+		ctx.fillStyle = "red";          // set the fill color to red
+		ctx.fillRect(50, 50, 200, 150); // draw rectangle at x=50, y=50 with width=200, height=150
+	}
+ 
+	// drawName() is called when the Draw Name button is pressed
+	// It writes a name as text onto the canvas
+	function drawName() {
+		ctx.font = "30px Arial";             // set the font size and style
+		ctx.fillStyle = "black";             // set the text color to black
+		ctx.fillText("Riddhish Bommineni", 60, 160); // draw the text at x=60, y=160
+	}
+ 
+	// loadImage() is called when the Load Image button is pressed
+	// It draws the hidden image element onto the canvas
+	function loadImage() {
+		var img = document.getElementById("myImage"); // get the hidden image by its id
+		ctx.drawImage(img, 0, 0);                      // draw the image at the top-left corner of the canvas
+	}
+ 
+	// clearCanvas() is called when the Clear Canvas button is pressed
+	// It erases everything on the canvas
+	function clearCanvas() {
+		ctx.clearRect(0, 0, 300, 300); // clear the entire 300x300 canvas area
+	}
+
+	
+
+
+
+
+
+
+
+
+
+
 
 
 
